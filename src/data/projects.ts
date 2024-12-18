@@ -4,7 +4,7 @@ export const projects = [
     description: "-AN ELECTRON APPLICATION- REACT AND TYPESCRIPT",
     image: "./public/images/projects/n_01.png",
 
-    tags: ["Rust", "Networking", "DNS"],
+    tags: ["React", "Typescript", "Utility"],
     link: "https://github.com/AAKASHEE/AAKASHE_PROJECTS_NOTES.git",
   },
   // {
