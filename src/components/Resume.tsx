@@ -1,32 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { FileText } from "lucide-react";
 
 const Resume = () => {
   const resumeLink =
     "https://drive.google.com/file/d/1bTrb2CPRtiDGWR4ZAny3cHDghqIRXlph/view"; // Replace with your actual Google Drive link
-  const blurRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleMouseMove = (event: MouseEvent) => {
-      if (blurRef.current) {
-        const { clientX, clientY } = event;
-        blurRef.current.style.clipPath = `circle(100px at ${clientX}px ${clientY}px)`;
-      }
-    };
-
-    document.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
 
   return (
     <section id="resume" className="bg-gray-900 py-20 relative">
-      <div
-        ref={blurRef}
-        className="absolute inset-0 bg-gray-800 filter blur-sm pointer-events-none"
-      ></div>
       <div className="container mx-auto px-6 relative">
         <h2 className="text-3xl font-bold text-white mb-12">Resume</h2>
 
