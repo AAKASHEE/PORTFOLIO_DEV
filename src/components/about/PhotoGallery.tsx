@@ -2,10 +2,14 @@ import React, { useState, useEffect } from "react";
 
 const PhotoGallery = () => {
   const photos = [
-    { id: 1, url: "./public/images/projects/aakashe.jpg", alt: "Library Photo" },
-    { id: 2, url: "/images/aakashe_02.jpg", alt: "Cultural Team" },
-    { id: 3, url: "/images/aakashe_03.jpg", alt: "Stage Performance" },
-    { id: 4, url: "/images/aakashe_04.jpg", alt: "Profile Photo" },
+    {
+      id: 1,
+      url: "./img/aakashe.jpg",
+      alt: "Library Photo",
+    },
+    { id: 2, url: "./img/aakashe_02.jpg", alt: "Cultural Team" },
+    { id: 3, url: "./img/aakashe_03.jpg", alt: "Stage Performance" },
+    { id: 4, url: "./img/aakashe_04.jpg", alt: "Profile Photo" },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
