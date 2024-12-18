@@ -5,9 +5,9 @@ export const achievements = [
     date: 'August 2024'
   },
   {
-    title: 'CONTRIBUTOR WITH 100+ CONTRIBUTIONS',
+    title: 'Critical Problem Analyzer',
     organization: 'LEETCODE',
-    date: 'May 2024'
+    date: 'September 2024'
   },
  
 ];
