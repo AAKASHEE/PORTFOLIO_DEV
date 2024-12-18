@@ -5,12 +5,18 @@ const Resume = () => {
   const resumeLink =
     "https://drive.google.com/file/d/1bTrb2CPRtiDGWR4ZAny3cHDghqIRXlph/view"; // Replace with your actual Google Drive link
   const blurRef = useRef<HTMLDivElement>(null);
+  const lineRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
       if (blurRef.current) {
         const { clientX, clientY } = event;
         blurRef.current.style.clipPath = `circle(100px at ${clientX}px ${clientY}px)`;
+      }
+      if (lineRef.current) {
+        const { clientX, clientY } = event;
+        lineRef.current.style.left = `${clientX}px`;
+        lineRef.current.style.top = `${clientY}px`;
       }
     };
 
@@ -25,7 +31,12 @@ const Resume = () => {
     <section id="resume" className="bg-gray-900 py-20 relative">
       <div
         ref={blurRef}
-        className="absolute inset-0 bg-gray-800 filter blur-md pointer-events-none"
+        className="absolute inset-0 bg-gray-800 filter blur-sm pointer-events-none"
+      ></div>
+      <div
+        ref={lineRef}
+        className="absolute w-2 h-2 bg-gold rounded-full pointer-events-none"
+        style={{ transition: "left 0.1s, top 0.1s" }}
       ></div>
       <div className="container mx-auto px-6 relative">
         <h2 className="text-3xl font-bold text-white mb-12">Resume</h2>
@@ -69,11 +80,11 @@ const Resume = () => {
             {/* Blur Effect - Sides Only */}
             <div className="absolute inset-0 pointer-events-none">
               <div
-                className="absolute inset-y-0 left-0 w-60 bg-gray-800"
+                className="absolute inset-y-0 left-0 w-60 bg-gray-100"
                 style={{ filter: "blur(40px)" }}
               ></div>
               <div
-                className="absolute inset-y-0 right-0 w-60 bg-gray-800"
+                className="absolute inset-y-0 right-0 w-60 bg-gray-100"
                 style={{ filter: "blur(40px)" }}
               ></div>
             </div>
