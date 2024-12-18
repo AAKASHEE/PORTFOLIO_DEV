@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { heroContent } from "../data/hero";
 import Button from "./common/Button";
 import ContactModal from "./contact/ContactModal";
