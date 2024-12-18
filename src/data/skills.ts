@@ -4,8 +4,8 @@ export const skills = [
     icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
   },
   {
-    name: "Cpp",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cpp/cpp-original.svg",
+    name: "C++",
+    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c++/c++-original.svg",
   },
   {
     name: "Java",

@@ -27,7 +27,7 @@ export const getSkillIcon = (skillName: string): string | null => {
     Python:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
     Java: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-    C: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+    "C++":"https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
     PostgreSQL:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
     SQLite:
@@ -53,8 +53,6 @@ export const getSkillIcon = (skillName: string): string | null => {
 
     MongoDB:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
-
-    Cpp: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
     Tailwindcss:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
 
