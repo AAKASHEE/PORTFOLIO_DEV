@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { heroContent } from "../data/hero";
 import Button from "./common/Button";
+import ContactModal from "./contact/Contact.Modal";
 
 const Hero = () => {
-  const [, setIsContactModalOpen] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   return (
     <section
@@ -29,9 +30,13 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      <ContactModal
+        isOpen={isContactModalOpen}
+        onClose={() => setIsContactModalOpen(false)}
+      />
     </section>
   );
 };
 
 export default Hero;
-
