@@ -5,7 +5,7 @@ export const projects = [
     image: "./public/images/projects/n_01.png",
 
     tags: ["Rust", "Networking", "DNS"],
-    link: "https://github.com/yourusername/dns-server-rust",
+    link: "https://github.com/AAKASHEE/AAKASHE_PROJECTS_NOTES.git",
   },
   // {
   //   title: "HaalSamachar",
@@ -15,5 +15,4 @@ export const projects = [
   //   tags: ["NextJS", "TypeScript", "TailwindCSS"],
   //   link: "https://github.com/yourusername/haalsamachar",
   // },
-  
 ];
