@@ -3,7 +3,7 @@ import { FileText } from "lucide-react";
 
 const Resume = () => {
   const resumeLink =
-    "https://drive.google.com/file/d/1oQ4IpltZ2DgCHTK3_0oVlOlWNKV7tK51/view"; // Replace with your actual Google Drive link
+    "https://drive.google.com/file/d/1bTrb2CPRtiDGWR4ZAny3cHDghqIRXlph/view"; // Replace with your actual Google Drive link
 
   return (
     <section id="resume" className="bg-gray-900 py-20">
