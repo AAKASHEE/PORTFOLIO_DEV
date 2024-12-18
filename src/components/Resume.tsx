@@ -22,7 +22,7 @@ const Resume = () => {
               {/* Resume Preview Image */}
               <div className="relative aspect-[1/1.4] w-full">
                 <img
-                  src="./public/images/projects/preview_resume.png" // Replace with your resume preview image
+                  src="./img/preview_resume.png" // Replace with your resume preview image
                   alt="Resume Preview"
                   className="w-full h-full object-cover"
                 />
