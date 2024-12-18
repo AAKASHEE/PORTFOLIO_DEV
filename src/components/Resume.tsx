@@ -1,13 +1,33 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { FileText } from "lucide-react";
 
 const Resume = () => {
   const resumeLink =
     "https://drive.google.com/file/d/1bTrb2CPRtiDGWR4ZAny3cHDghqIRXlph/view"; // Replace with your actual Google Drive link
+  const blurRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleMouseMove = (event: MouseEvent) => {
+      if (blurRef.current) {
+        const { clientX, clientY } = event;
+        blurRef.current.style.clipPath = `circle(100px at ${clientX}px ${clientY}px)`;
+      }
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
 
   return (
-    <section id="resume" className="bg-gray-900 py-20">
-      <div className="container mx-auto px-6">
+    <section id="resume" className="bg-gray-900 py-20 relative">
+      <div
+        ref={blurRef}
+        className="absolute inset-0 bg-gray-800 filter blur-md pointer-events-none"
+      ></div>
+      <div className="container mx-auto px-6 relative">
         <h2 className="text-3xl font-bold text-white mb-12">Resume</h2>
 
         <div className="max-w-3xl mx-auto">
@@ -15,14 +35,14 @@ const Resume = () => {
             href={resumeLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="block group"
+            className="block group relative"
           >
             {/* Resume Preview Card */}
             <div className="relative bg-gray-800 rounded-lg overflow-hidden shadow-xl transition-all duration-300 transform group-hover:scale-105">
               {/* Resume Preview Image */}
               <div className="relative aspect-[1/1.4] w-full">
                 <img
-                  src="./img/preview_resume.png" // Replace with your resume preview image
+                  src="./img/preview_resume.png"
                   alt="Resume Preview"
                   className="w-full h-full object-cover"
                 />
@@ -45,6 +65,17 @@ const Resume = () => {
                   </button>
                 </div>
               </div>
+            </div>
+            {/* Blur Effect - Sides Only */}
+            <div className="absolute inset-0 pointer-events-none">
+              <div
+                className="absolute inset-y-0 left-0 w-60 bg-gray-800"
+                style={{ filter: "blur(40px)" }}
+              ></div>
+              <div
+                className="absolute inset-y-0 right-0 w-60 bg-gray-800"
+                style={{ filter: "blur(40px)" }}
+              ></div>
             </div>
           </a>
         </div>
