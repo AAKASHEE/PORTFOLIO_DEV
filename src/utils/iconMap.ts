@@ -35,8 +35,6 @@ export const getSkillIcon = (skillName: string): string | null => {
 
     Nodejs:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
-    Express:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
 
     HTML5:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",

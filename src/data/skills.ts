@@ -48,10 +48,6 @@ export const skills = [
     icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
   },
   {
-    name: "Express",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
-  },
-  {
     name: "Electron",
     icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg",
   },
