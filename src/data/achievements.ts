@@ -9,9 +9,5 @@ export const achievements = [
     organization: 'LEETCODE',
     date: 'May 2024'
   },
-  // {
-  //   title: '1st Place, Coding Relay Race 2024',
-  //   organization: 'Department Of AI/ML, Dayananda Sagar College Of Engineering',
-  //   date: 'May 2024'
-  // }
+ 
 ];
