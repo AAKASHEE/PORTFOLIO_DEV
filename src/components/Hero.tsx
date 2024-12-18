@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { heroContent } from "../data/hero";
 import Button from "./common/Button";
-import ContactModal from "./contact/Contact.Modal";
+import ContactModal from "./contact/ContactModal";
 
 const Hero = () => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
