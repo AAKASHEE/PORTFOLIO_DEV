@@ -80,11 +80,11 @@ const Resume = () => {
             {/* Blur Effect - Sides Only */}
             <div className="absolute inset-0 pointer-events-none">
               <div
-                className="absolute inset-y-0 left-0 w-60 bg-gray-100"
+                className="absolute inset-y-0 left-0 w-60 bg-gray-400"
                 style={{ filter: "blur(40px)" }}
               ></div>
               <div
-                className="absolute inset-y-0 right-0 w-60 bg-gray-100"
+                className="absolute inset-y-0 right-0 w-60 bg-gray-400"
                 style={{ filter: "blur(40px)" }}
               ></div>
             </div>
