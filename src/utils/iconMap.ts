@@ -23,8 +23,7 @@ export const getSkillIcon = (skillName: string): string | null => {
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
     "Next.js":
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
-    Svelte:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/svelte/svelte-original.svg",
+
     Python:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
     Java: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
@@ -33,21 +32,12 @@ export const getSkillIcon = (skillName: string): string | null => {
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
     SQLite:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg",
-    Firebase:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg",
-    GraphQL:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/graphql/graphql-plain.svg",
-    "Node.js":
+
+    Nodejs:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
     Express:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
-    Flask:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg",
-    Spring:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg",
-    Rust: "https://rustacean.net/assets/rustacean-flat-happy.svg",
-    Golang:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
+
     HTML5:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
     CSS3: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
@@ -67,9 +57,14 @@ export const getSkillIcon = (skillName: string): string | null => {
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
 
     Cpp: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+    Tailwindcss:
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
 
-    Bash: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg",
-    Redux:"https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+    Golang:
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
+
+    Electron:
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg",
   };
 
   return customIcons[skillName] || null;

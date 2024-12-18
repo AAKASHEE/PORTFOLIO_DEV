@@ -21,7 +21,7 @@ export const skills = [
   },
   {
     name: "Tailwindcss",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
+    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwind-css/tailwind-css-original.svg",
   },
   {
     name: "TypeScript",
@@ -40,36 +40,11 @@ export const skills = [
     icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
   },
   {
-    name: "Svelte",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/svelte/svelte-original.svg",
-  },
-  {
-    name: "GraphQL",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/graphql/graphql-plain.svg",
-  },
-  {
-    name: "Firebase",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-original.svg",
-  },
-  {
-    name: "Redux",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
-  },
-  {
     name: "Golang",
     icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg",
   },
   {
-    name: "Rust",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg",
-  },
-
-  {
-    name: "Bash",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg",
-  },
-  {
-    name: "Node.js",
+    name: "Nodejs",
     icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
   },
   {
@@ -77,10 +52,9 @@ export const skills = [
     icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
   },
   {
-    name: "Flask",
-    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg",
+    name: "Electron",
+    icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg",
   },
-
   {
     name: "PostgreSQL",
     icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
