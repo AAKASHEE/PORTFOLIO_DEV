@@ -86,7 +86,7 @@ function App() {
         <Resume />
         <Projects />
         <Achievements />
-        <StickyNoteApp />
+        
       </main>
     </div>
   );
