@@ -10,6 +10,9 @@ import NotesList from "./components/Notes.List";
 import StickyNoteModal from "./components/contact/StickyNoteModal";
 import { StickyNote } from "lucide-react";
 
+
+
+
 const StickyNoteApp: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [notes, setNotes] = useState([]);
