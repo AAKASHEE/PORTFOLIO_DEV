@@ -13,25 +13,25 @@ const socialLinks = [
   {
     name: "GitHub",
     icon: Github,
-    href: "https://github.com/yourusername",
+    href: "https://github.com/aakashee",
     color: "hover:text-gray-400",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://linkedin.com/in/yourusername",
+    href: "https://linkedin.com/in/aakashe",
     color: "hover:text-blue-400",
   },
   {
     name: "Instagram",
     icon: Instagram,
-    href: "https://instagram.com/yourusername",
+    href: "https://instagram.com/aakaas.he",
     color: "hover:text-pink-400",
   },
   {
     name: "Twitter",
     icon: Twitter,
-    href: "https://twitter.com/yourusername",
+    href: "https://twitter.com/AAKASHEEX",
     color: "hover:text-blue-400",
   },
   {
