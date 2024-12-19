@@ -1,13 +1,76 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Resume from './components/Resume'; // Add this import
+import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
-// import Experience from "./components/Experience";
-// import OpenSource from "./components/OpenSource";
+import NotesList from "./components/Notes.List";
+import StickyNoteModal from "./components/contact/StickyNoteModal";
+import { StickyNote } from "lucide-react";
+
+const StickyNoteApp: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [notes, setNotes] = useState([]);
+
+  const fetchNotes = async () => {
+    try {
+      const response = await fetch("http://localhost:5001/api/notes");
+      if (!response.ok) {
+        throw new Error("Failed to fetch");
+      }
+      const data = await response.json();
+      setNotes(data);
+    } catch (err) {
+      console.error("Error fetching notes:", err);
+    }
+  };
+
+  useEffect(() => {
+    fetchNotes();
+  }, []);
+
+  const handleNoteSubmit = async (
+    name: string,
+    email: string,
+    message: string
+  ) => {
+    try {
+      const response = await fetch("http://localhost:5001/api/notes", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Something went wrong");
+      }
+
+      const data = await response.json();
+      console.log("Note saved:", data);
+      fetchNotes(); // Refresh the list of notes
+      setIsModalOpen(false);
+    } catch (err) {
+      console.error("Error submitting note:", err);
+    }
+  };
+
+  return (
+    <div>
+      <button onClick={() => setIsModalOpen(true)}>Add Sticky Note</button>
+      <StickyNoteModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        onSubmit={handleNoteSubmit}
+      />
+      <StickyNote />
+      <NotesList notes={notes} />
+    </div>
+  );
+};
 
 function App() {
   return (
@@ -20,8 +83,7 @@ function App() {
         <Resume />
         <Projects />
         <Achievements />
-        {/* <Experience />
-        <OpenSource /> */}
+        <StickyNoteApp />
       </main>
     </div>
   );
