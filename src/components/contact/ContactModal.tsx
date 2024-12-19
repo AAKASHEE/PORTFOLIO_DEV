@@ -19,7 +19,7 @@ const socialLinks = [
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://linkedin.com/in/aakashe",
+    href: "https://linkedin.com/in/aakashee",
     color: "hover:text-blue-400",
   },
   {
