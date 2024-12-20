@@ -1,5 +1,3 @@
-import dotenv from "dotenv";
-dotenv.config();
 import React, { useState } from "react";
 import Modal from "../common/Modal";
 
@@ -8,8 +6,8 @@ interface StickyNoteModalProps {
   onClose: () => void;
 }
 
-const API_URL = process.env.Node_backend || "http://localhost:5001/api/notes";
-
+//const API_URL = "http://localhost:5001/api/notes";
+const API_URL = "https://portfolio-backend-mfk1.onrender.com/api/notes";
 const StickyNoteModal: React.FC<StickyNoteModalProps> = ({
   isOpen,
   onClose,
