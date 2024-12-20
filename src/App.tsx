@@ -6,12 +6,8 @@ import Skills from "./components/Skills";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
-import NotesList from "./components/Notes.List";
+import NotesList from "./components/NotesList";
 import StickyNoteModal from "./components/contact/StickyNoteModal";
-import { StickyNote } from "lucide-react";
-
-
-
 
 const StickyNoteApp: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -69,7 +65,6 @@ const StickyNoteApp: React.FC = () => {
         onClose={() => setIsModalOpen(false)}
         onSubmit={handleNoteSubmit}
       />
-      <StickyNote />
       <NotesList notes={notes} />
     </div>
   );
@@ -86,7 +81,7 @@ function App() {
         <Resume />
         <Projects />
         <Achievements />
-        
+        <StickyNoteApp />
       </main>
     </div>
   );
