@@ -24,7 +24,7 @@
     }
   ],
   "env": {
-    "MONGO_URI": "mongodb+srv://aakashee:vic-ceBsuc@aakashee.yinja.mongodb.net/mydatabase?retryWrites=true&w=majority",
+    "MONGO_URI": "mongodb+srv://<username>:<password>@<cluster-address>/<database>?retryWrites=true&w=majority",
     "CORS_ORIGIN": "https://your-vercel-domain.vercel.app"
   }
 }
