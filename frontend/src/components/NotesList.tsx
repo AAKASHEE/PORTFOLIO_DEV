@@ -14,7 +14,6 @@ interface NotesListProps {
 const NotesList: React.FC<NotesListProps> = ({ notes }) => {
   return (
     <div>
-      <h2>Sticky Notes</h2>
       <ul>
         {notes.map((note) => (
           <li key={note._id}>

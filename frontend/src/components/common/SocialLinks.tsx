@@ -1,34 +1,34 @@
 import React from "react";
-import { Github, Linkedin, Instagram, Twitter, Ghost, GiftIcon } from "lucide-react";
+import { Github, Linkedin, Instagram, Twitter } from "lucide-react";
 
 const socialLinks = [
   {
     icon: Linkedin,
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/aakashee/",
     hoverColor: "hover:text-blue-400",
   },
   {
     icon: Github,
-    href: "https://github.com",
+    href: "https://github.com/AAKASHEE",
     hoverColor: "hover:text-gray-400",
   },
   {
     icon: Instagram,
-    href: "https://instagram.com",
+    href: "https://instagram.com/aakaas.he",
     hoverColor: "hover:text-pink-400",
   },
   {
     icon: Twitter,
-    href: "https://twitter.com",
+    href: "https://x.com/AAKASHEEX",
     hoverColor: "hover:text-blue-400",
   },
   {
-    icon: Ghost,
+    text: "GeeksForGeeks", 
     href: "https://www.geeksforgeeks.org/user/aakashee/",
     hoverColor: "hover:text-green-400",
   },
   {
-    icon: GiftIcon,
+    text: "LeetCode", 
     href: "https://leetcode.com/u/AAKASHEE/",
     hoverColor: "hover:text-yellow-400",
   },
@@ -37,15 +37,15 @@ const socialLinks = [
 const SocialLinks = () => {
   return (
     <div className="flex space-x-4">
-      {socialLinks.map(({ icon: Icon, href, hoverColor }) => (
+      {socialLinks.map((link) => (
         <a
-          key={href}
-          href={href}
+          key={link.href}
+          href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          className={`transition-colors ${hoverColor}`}
+          className={`transition-colors ${link.hoverColor}`}
         >
-          <Icon className="w-6 h-6" />
+          {link.icon ? <link.icon className="w-6 h-6" /> : link.text} 
         </a>
       ))}
     </div>
