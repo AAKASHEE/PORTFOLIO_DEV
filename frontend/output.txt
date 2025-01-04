@@ -12737,7 +12737,7 @@
 │       ├── n_05.png.png
 │       ├── n_06.png.png
 │       ├── n_07.png.png
-│       └── preview_resume.png
+│       └── preview_
 ├── src
 │   ├── App.tsx
 │   ├── components
