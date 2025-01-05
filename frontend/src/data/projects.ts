@@ -25,7 +25,7 @@ export const projects = [
   },
   {
     title: "Build a functional e-commerce website with product listings, cart management, checkout, and order tracking.",
-    description: "This is a full-stack portfolio project built with React, Vite, and Express. The backend connects to a MongoDB database to manage data, and the frontend is deployed using Vercel.",
+    description: "create an interactive website of amazon with JS and cart with some demo products",
     image: "./img/JS_AMAZON.png",
 
     tags: ["HTML", "CSS", "JavaScript"],
