@@ -71,6 +71,9 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
       <StickyNoteModal
         isOpen={isStickyNoteModalOpen}
         onClose={() => setIsStickyNoteModalOpen(false)}
+        onSubmit={async () => {
+          setIsStickyNoteModalOpen(false);
+        }}
       />
     </>
   );

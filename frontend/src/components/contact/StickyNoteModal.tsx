@@ -4,6 +4,7 @@ import Modal from "../common/Modal";
 interface StickyNoteModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onSubmit: (name: string, email: string, message: string) => Promise<void>;
 }
 
 //const API_URL = "http://localhost:5001/api/notes";
@@ -100,11 +101,10 @@ const StickyNoteModal: React.FC<StickyNoteModalProps> = ({
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`w-full font-bold py-2 px-4 rounded transition-colors ${
-              isSubmitting
+            className={`w-full font-bold py-2 px-4 rounded transition-colors ${isSubmitting
                 ? "bg-yellow-700 cursor-not-allowed"
                 : "bg-yellow-600 hover:bg-yellow-700"
-            }`}
+              }`}
           >
             {isSubmitting ? "Sending..." : "Send Message"}
           </button>

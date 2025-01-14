@@ -57,7 +57,17 @@ const StickyNoteApp: React.FC = () => {
     }
   };
 
-  return 
+  return (
+    <div>
+      <NotesList notes={notes} />
+      <button onClick={() => setIsModalOpen(true)}>Add Note</button>
+      <StickyNoteModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        onSubmit={handleNoteSubmit}
+      />
+    </div>
+  );
 };
 
 function App() {
