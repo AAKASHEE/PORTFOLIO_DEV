@@ -3,7 +3,7 @@ export const achievements = [
     title: 'HardCore Problem Solver',
     organization: `GEEKSFORGEEKS@4 ⭐️  
     Contest Rating: 1870, Global Rank: 1237; 
-    RANK: 22 (DSCE)`,
+    RANK: 19 (DSCE)`,
     date: 'August 2024'
   },
   {
