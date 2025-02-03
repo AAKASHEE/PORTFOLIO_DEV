@@ -7,7 +7,7 @@ export const achievements = [
     date: 'August 2024'
   },
   {
-    title: 'Critical Problem Analyzer Rank:943,101',
+    title: 'Critical Problem Analyzer Rank:877,352',
     organization: 'LEETCODE',
     date: 'September 2024'
   },
