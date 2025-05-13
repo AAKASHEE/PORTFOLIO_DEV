@@ -29,7 +29,7 @@ const socialLinks = [
   },
   {
     text: "LeetCode", 
-    href: "https://leetcode.com/u/AAKASHEE/",
+    href: "https://leetcode.com/u/AAKASHE/",
     hoverColor: "hover:text-yellow-400",
   },
 ];
