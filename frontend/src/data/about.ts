@@ -3,7 +3,7 @@ export const aboutContent = {
   title: "Aspiring Software Engineer | Competetive Programmer | Student",
   subtitle: "Team Leader/Problem-Solver",
   degree: "Bachelor of Engineering",
-  specialisation: "Eletrical and Electronics Engineering",
+  specialisation: "Electrical and Electronics Engineering",
   city: "Bengaluru, India",
   email: "aakashpatra253@gmail.com",
   description: [
