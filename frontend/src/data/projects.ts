@@ -34,7 +34,7 @@ export const projects = [
   {
     title: "Develop an AI-powered music recognition app with audio input, lyric detection, and streaming integration.",
     description: "Create an intelligent music app like Shazam using AI to recognize songs from humming, singing, or audio playback, featuring real-time lyric display and integration with platforms like Spotify.",
-    image: "public/img/cogmu.png",
+    image: "./img/cogmu.png",
 
     tags: ["React", "Tailwind", "JavaScript"],
     link: "https://github.com/AAKASHEE/COGMU.git",
@@ -42,7 +42,7 @@ export const projects = [
   {
     title: "Design a Smart College Database Management System with AI-Driven Insights",
     description: "Build an intelligent college DBMS using React and JavaScript to manage students, courses, attendance, and results efficiently, with a user-friendly UI and admin dashboard. Includes search, filter, and report generation features.",
-    image: "public/img/college_dbms.png",
+    image: "./img/college_dbms.png",
 
     tags: ["React", "Tailwind", "JavaScript"],
     link: "https://github.com/AAKASHEE/COLLEGE-DBMS.git",
