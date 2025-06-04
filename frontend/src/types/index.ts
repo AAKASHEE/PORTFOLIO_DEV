@@ -17,10 +17,12 @@ export interface Photo {
   caption: string;
 }
 export interface Achievement {
-  title:string;
-  organization:string;
-  date:string;
+  title: string;
+  organization: string;
+  date: string;
+  link: string;
 }
+
 export interface Experience {
   role: string;
   company: string;
