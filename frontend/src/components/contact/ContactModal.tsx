@@ -37,7 +37,7 @@ const socialLinks = [
   {
     name: "Mail",
     icon: Mail,
-    href: "mailto:youremail@example.com",
+    href: "mailto:aakashpatra253@gmail.com",
     color: "hover:text-red-400",
   },
 ];
