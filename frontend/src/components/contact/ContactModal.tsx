@@ -31,7 +31,7 @@ const socialLinks = [
   {
     name: "Twitter",
     icon: Twitter,
-    href: "https://twitter.com/AAKASHEEX",
+    href: "https://twitter.com/AAKASHEXX",
     color: "hover:text-blue-400",
   },
   {
